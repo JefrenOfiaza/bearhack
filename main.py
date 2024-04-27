@@ -1,6 +1,6 @@
 import requests
 
-class GeminiGPT:
+"""class GeminiGPT:
     def __init__(self, api_key):
         self.api_url = "https://api.geminiai.com/gpt"
         self.headers = {
@@ -14,4 +14,4 @@ class GeminiGPT:
             "max_tokens": max_tokens
         }
         response = requests.post(self.api_url, headers=self.headers, json=data)
-        return response.json()
+        return response.json()"""
