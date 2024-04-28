@@ -7,27 +7,27 @@
         <meta name="description" content="...">
         <title>CareBear</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="resize_question_box.js"></script>
     </head>
     <body>
         <div class="web_page">
             <h1 class="title">CareBear</h1>
-            <h4 class="subtitle">A health checkup AI that will diagnose your illness!</h4>
-            <div class="content_bubble">
-                <div class="question_box">
-                    <h4 class="subtitle">Hello! tell us about your symptoms</h3>
-                    <div class="UI_box">
-                        <textarea class="text_area" placeholder="Type your symptoms..."></textarea>
-                    </div>
+            <h3 class="subtitle">A health check-up AI that will diagnose your illness!</h3>
+            <div class="question_box" id="question_box">
+                <h3 class="subtitle">Hello! tell us about your symptoms</h3>
+                <div class="flex_box">
+                    <textarea class="text_area" id="symptoms" placeholder="Type your symptoms..."></textarea>
+                    <a href="https://www.google.com">
+                        <button class="request_button">Request Diagnosis</button>
+                    </a>
                 </div>
             </div>
         </div>
     </body>
     <body>
-        <div class="content_bubble">
-            <div class="box_for_reply_box">
-                <div class="reply_box">
-                    <h5>. . .</h5>
-                </div>
+        <div class="box_for_reply_box">
+            <div class="reply_box">
+                <h5>. . .</h5>
             </div>
         </div>
     </body>
