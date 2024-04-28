@@ -1,0 +1,95 @@
+body {
+    background-image: url(img/background.jpeg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+:root {
+    --font-arimo: 'Arimo', sans-serif;
+    --font-ibm_plex_sans: 'ibm_plex_sans', sans-serif;
+}
+
+.web_page {
+    text-align: center;
+    font-family: var(--font-ibm_plex_sans), sans-serif;
+}
+
+.title {
+    margin-top: 160px;
+    font-size: 3em;
+    font-family: var(--font-arimo), sans-serif;
+}
+
+.subtitle {
+    margin-top: -20px;
+    color: gray;
+    font-weight: lighter;
+}
+
+.content_bubble {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.question_box {
+    background-color: whitesmoke;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.UI_box {
+    position: relative;
+}
+
+.text_area {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.text_area::placeholder {
+    color: #999; 
+}
+
+.text_area:focus:placeholder {
+    color: transparent;
+}
+
+.box_for_reply_box {
+    background-color: whitesmoke;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 80%;
+    max-width: 600px;
+    height: 5px;
+}
+
+.reply_box {
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -15px;
+    margin-left: -10px;
+    width: 95%;
+    max-width: 600px;
+    height: 3px;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    font-family: var(--font-arimo), sans-serif;
+}
