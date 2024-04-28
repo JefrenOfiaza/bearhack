@@ -16,47 +16,59 @@ body {
 
 .title {
     margin-top: 160px;
-    font-size: 3em;
+    font-size: 5em;
     font-family: var(--font-arimo), sans-serif;
 }
 
 .subtitle {
-    margin-top: -20px;
+    margin: 0 auto;
     color: gray;
     font-weight: lighter;
-}
-
-.content_bubble {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .question_box {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 50px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: whitesmoke;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    width: 80%;
-    max-width: 600px;
 }
 
-.UI_box {
-    position: relative;
+.flex_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .text_area {
-    width: 100%;
-    min-height: 100px;
+    flex: 1; 
+    width: auto;
+    height: auto;
+    min-height: 30px;
+    height: 30px;
     resize: vertical;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
+    margin: 10px;
+    resize: none;
+    font-size: 22px;
 }
 
 .text_area::placeholder {
+    font-size: 22px;
     color: #999; 
 }
 
@@ -64,15 +76,34 @@ body {
     color: transparent;
 }
 
+.request_button {
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: auto;
+}
+
+.request_button:hover {
+    background-color: darkgray;
+}
+
 .box_for_reply_box {
+    margin: 0 auto;
+    margin-top: 10px;
     background-color: whitesmoke;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    width: 80%;
-    max-width: 600px;
-    height: 5px;
+    width: 50%;
+    min-height: 5px;
+    height: auto;
 }
 
 .reply_box {
@@ -82,7 +113,6 @@ body {
     margin-top: -15px;
     margin-left: -10px;
     width: 95%;
-    max-width: 600px;
     height: 3px;
 }
 
